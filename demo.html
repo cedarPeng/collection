@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<title>收藏网页</title>
+<style>
+	*{
+		margin: 0px;
+		padding: 0px;
+		outline: none;
+		font-family: "微软雅黑";
+		border: 0;
+	}
+	ul,ol{
+		list-style: none;
+	}
+	body{
+		overflow-x: hidden;
+		overflow-y: hidden;
+	}
+	div{
+		width: 15%;
+		height: 100vh;
+		float: left;
+		background: #e3e3e3;
+	}
+	ul{
+		width: 100%;
+		height:90vh;
+	}
+	ul li{
+		line-height: 2em;
+		height: 2em;
+		text-align: center;
+		margin: 5px 0;
+		background: #d3d3d3;
+		cursor: pointer;
+		letter-spacing: 1px;
+		padding: 5px 0;
+	}
+	ul li:hover{
+		background: black;
+		color: white;
+	}
+	ol{
+		width: 85%;
+		height: 100vh;
+		float: right;
+	}
+	ol li,ol li iframe{
+		width: 100%;
+		height: 100vh;
+	}
+	ol li{
+		display: none;
+	}
+</style>
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js">
+</script>
+</head>
+
+<body>
+	<div>
+		<ul>
+			<li>人人卖</li>
+			<li>十二种经典配色方案</li>
+			<li>花瓣</li>
+			<li>站酷</li>
+			<li>千图网</li>
+			<li>素材中国</li>
+			<li>千库网</li>
+			<li>微信公众平台</li>
+			<li>企鹅公众平台</li>
+			<li>QQ公众平台</li>
+			<li>秀米</li>
+			<li>常用配色表</li>
+			<li>ARKIE作图</li>
+		</ul>
+	</div>
+	<ol>
+		<li><iframe src="http://mall.rrbnm.cn" style="height: 936px;width: 614px;margin-left: 400px"></iframe></li>
+		<li><iframe src="https://wenku.baidu.com/view/315d12bb102de2bd960588ba.html"></iframe></li>
+		<li><iframe src="http://huaban.com"></iframe></li>
+		<li><iframe src="https://www.zcool.com.cn"></iframe></li>
+		<li><iframe src="http://www.58pic.com"></iframe></li>
+		<li><iframe src="http://www.sccnn.com"></iframe></li>
+		<li><iframe src="http://588ku.com"></iframe></li>
+		<li><iframe src="https://mp.weixin.qq.com"></iframe></li>
+		<li><iframe src="https://om.qq.com"></iframe></li>
+		<li><iframe src="https://mp.qq.com"></iframe></li>
+		<li><iframe src="https://xiumi.us"></iframe></li>
+		<li><iframe src="http://tool.c7sky.com/webcolor/"></iframe></li>
+		<li><iframe src="https://www.arkie.cn/welcome"></iframe></li>
+	</ol>
+	<script>
+		$('div ul li').click(function(){
+			var indexs = $(this).index();
+			$('ol li').eq(indexs).show().siblings('li').hide();
+		})
+	</script>
+</body>
+</html>
